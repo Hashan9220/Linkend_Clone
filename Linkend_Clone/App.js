@@ -14,7 +14,7 @@ import SingUp from './Screen/SingUp';
 import Login from './Screen/Login';
 import TabNavigetor from './Screen/TabNavigetor';
 
-const Tab = createBottomTabNavigator();
+
 const Stack = createStackNavigator();
 
 export class App extends Component {

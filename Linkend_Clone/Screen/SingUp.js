@@ -52,6 +52,10 @@ export class SingUp extends Component {
     <Button icon="camera" mode="contained" onPress={this.UserRegister}>
     SingUp
   </Button>
+  <Button mode="contained" onPress={()=>{
+                this.props.navigation.navigate('Login')}}>
+    Login
+  </Button>
             </View>
         )
     }

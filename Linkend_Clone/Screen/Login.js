@@ -14,13 +14,13 @@ export default class Login extends Component {
 
     userLogin = () => {
         auth()
-  .createUserWithEmailAndPassword(this.state.email, this.state.password)
+  .signInWithEmailAndPassword(this.state.email, this.state.password)
   .then(() => {
     console.log('User Loging Successful....');
     this.props.navigation.navigate('TabNavigetor');
   })
   .catch(error => {
-        console.log('User Loging Unsuccessful....');
+        console.log(error);
   })
   
     }

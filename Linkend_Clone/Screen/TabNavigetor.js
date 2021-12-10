@@ -1,5 +1,13 @@
 import React, { Component } from 'react'
-import { Text, View } from 'react-native'
+import { Text, View,Image } from 'react-native'
+import { createBottomTabNavigator } from '@react-navigation/bottom-tabs';
+import AppHome from '../Screen/AppHome'
+import Network from '../Screen/Network';
+import Post from '../Screen/Post';
+import Notification from '../Screen/Notification';
+import Jobs from '../Screen/Jobs';
+
+const Tab = createBottomTabNavigator();
 
 export default class TabNavigetor extends Component {
     render() {
@@ -17,7 +25,7 @@ export default class TabNavigetor extends Component {
               tabBarIcon: ({focused}) => (
                 <View style={{alignItem: 'center', justifycontent: 'center'}}>
                   <Image
-                    source={require('./assets/Home.png')}
+                    source={require('../Screen/assets/Home.png')}
                     style={{tintColor: focused ? '#5e6660' : '#0a0a0a'}}
                   />
                   <Text style={{color: 'black', fontSize: 10, bottom: 0}}>
@@ -36,7 +44,7 @@ export default class TabNavigetor extends Component {
               tabBarIcon: ({focused}) => (
                 <View style={{alignItem: 'center', justifycontent: 'center',left:10}}>
                   <Image
-                    source={require('./assets/network.png')}
+                    source={require('../Screen/assets/network.png')}
                     style={{tintColor: focused ? '#5e6660' : '#0a0a0a'}}
                   />
                   <Text style={{color: 'black', fontSize: 10, bottom: 0,left:-10}}>
@@ -54,7 +62,7 @@ export default class TabNavigetor extends Component {
               tabBarIcon: ({focused}) => (
                 <View style={{alignItem: 'center', justifycontent: 'center'}}>
                   <Image
-                    source={require('./assets/post.png')}
+                    source={require('../Screen/assets/post.png')}
                     style={{tintColor: focused ? '#5e6660' : '#0a0a0a'}}
                   />
                   <Text style={{color: 'black', fontSize: 10, bottom: 0,left:2}}>
@@ -72,7 +80,7 @@ export default class TabNavigetor extends Component {
               tabBarIcon: ({focused}) => (
                 <View style={{alignItem: 'center', justifycontent: 'center',left:10}}>
                   <Image
-                    source={require('./assets/notification.png')}
+                    source={require('../Screen/assets/notification.png')}
                     style={{tintColor: focused ? '#5e6660' : '#0a0a0a'}}
                   />
                   <Text style={{color: 'black', fontSize: 10, bottom: 0,left:-10}}>
@@ -90,7 +98,7 @@ export default class TabNavigetor extends Component {
               tabBarIcon: ({focused}) => (
                 <View style={{alignItem: 'center', justifycontent: 'center'}}>
                   <Image
-                    source={require('./assets/job.png')}
+                    source={require('../Screen/assets/job.png')}
                     style={{tintColor: focused ? '#5e6660' : '#0a0a0a'}}
                   />
                   <Text style={{color: 'black', fontSize: 10, bottom: 0,left:5}}>
