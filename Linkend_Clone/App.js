@@ -27,7 +27,9 @@ export class App extends Component {
           <Stack.Screen name="Login" component={Login}  options={{
                 headerShown: false}}/>       
                    <Stack.Screen name="TabNavigetor" component={TabNavigetor}  options={{
-                headerShown: false}}/>   
+                headerShown: false}}/>  
+                {/* <Stack.Screen name="Post" component={Post}  options={{
+                headerShown: false}}/>    */}
        </Stack.Navigator>
 
         
